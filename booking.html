@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Connect - Booking</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap2.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+<style>
+
+
+    .connect-navabr-dark {
+      background: #222b2f !important;
+      top: 0;
+      position: relative; }
+</style>
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark connect-navabr-dark">
+      <div class="container">
+        <h1>  <a href="index.html"><img src="img/logo.png" alt="" title="" /></a></h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#connect-nav" aria-controls="connect-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="connect-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="packages.html" class="nav-link">Packages And Promotions</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="history.html" class="nav-link">History And Location</a></li>
+            <li class="nav-item"><a href="insurance.html" class="nav-link">Insurance</a></li>
+            <li class="nav-item"><a href="blog-home.html "class="nav-link">Blog Home</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+
+
+
+    <section class="connect-section" style="background-color:#e0e0e0">
+      <div class="container">
+
+        <div class="row mb-5 justify-content-center text-center">
+          <div class="col-md-8">
+            <h2 class="connect-heading">Arrange Your Travel Now!</h2>
+          </div>
+        </div>
+
+
+
+        <div id="done" class="row mb-5 justify-content-center text-center">
+          <div class="col-md-8">
+            <h2 class="connect-heading" style="color: #1e7e34">We've received your payment!</h2>
+            <h4 style="color: #1e7e34">A Confirmation email will be sent to you soon.</h4>
+          </div>
+        </div>
+
+
+
+
+<form method="post" action="" id="pay">
+        <div class="col-md-10">
+        <h3 class="mb-3">       Payment</h3>
+            <div class="row">
+            <div class="col-md-4 mb-4">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Creditcard">
+          <label class="form-check-label" for="exampleRadios1">
+            Credit card
+          </label>
+        </div>
+            <div class="col-md-4 mb-4">
+          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Debitcard">
+          <label class="form-check-label" for="exampleRadios1">
+            Debit card
+          </label>
+        </div>
+        </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Full name as displayed on card</small>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Credit card number</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Pay</button>
+</div>
+</form>
+
+
+
+
+
+
+
+<form  id="book" method="post" enctype="multipart/form-data">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="First">First Name *</label>
+      <input type="text" class="form-control" id="First" placeholder="First Name" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Last">Last Name *</label>
+      <input type="text" class="form-control" id="Last" placeholder="Last Name" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="email">Email Address *</label>
+      <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="Number">Phone Number *</label>
+      <input id="tel" type="tel" class="form-control" id="Number" placeholder="Phone Number" required>
+    </div>
+  </div>
+
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Address</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="Tour">Select Tour</label>
+    <select multiple class="form-control" id="Tour" required>
+      <option>Pulau Pangkor</option>
+      <option>Cameron Highland</option>
+        <option>Langkawi</option>
+          <option>Parhentian</option>
+            <option>Kuala Lumpur</option>
+              <option>Melaka</option>
+                <option>Pulau Tioman</option>
+                  <option>...</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="Date">Starting Date *</label>
+      <input type="date" class="form-control" id="Date" placeholder="MM/DD/YYYY" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="Nights">Number of Nights *</label>
+      <input type="number" class="form-control" id="Nights" placeholder="Number of Nights" required>
+    </div>
+
+    <div class="col-md-4 mb-3">
+      <label for="People">Number of People * </label>
+      <input type="number" class="form-control" id="People" placeholder="Number of People" required>
+    </div>
+  </div>
+
+  <input type="button" onclick="check()" class="btn btn-primary btn-lg btn-block" value="Book Now">
+</form>
+
+        </div>
+    </section>
+
+    <footer class="connect-footer connect-bg-dark">
+      <div class="container">
+
+
+        <div class="row">
+          <div class="col-lg-3  col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6</h6>
+              <p>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6> </h6>
+              <div class="row">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-md-6 col-sm-6">
+            <div class="single-footer-widget">
+              <h6></h6>
+              <p>	</p>
+              <div id="mc_embed_signup">
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3  col-md-6 col-sm-6">
+            <div class="single-footer-widget mail-chimp">
+              <h6 class="mb-20"> </h6>
+              <ul class="instafeed d-flex flex-wrap">
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="row footer-bottom d-flex justify-content-between align-items-center">
+          <div class="col-md-7 order-md-1 order-2">
+            <p>&copy; All Rights Reserved. <br><span class="icon-heart"></span> by <a href="/">Travel Malaysia</a></p>
+          </div>
+
+          <div class="col-lg-4 col-sm-12 footer-social">
+            <a href="https://www.fb.com"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a>
+            <a href="https://www.behance.net/"><i class="fa fa-behance"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="js/jquery2-3.2.1.slim.min.js"></script>
+      <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main2.js"></script>
+      <script src="js/main.js"></script>
+  </body>
+</html>
+
+
+<script type="text/javascript">
+
+function check() {
+  phone = $("#tel").val();
+
+
+  if(isNaN(phone)){
+    alert("Please enter number in the phone field");
+  }else{
+    $("#book").submit();
+  }
+}
+
+
+
+</script>
